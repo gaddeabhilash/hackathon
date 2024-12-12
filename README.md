@@ -1,1 +1,1 @@
-print(abhi)
+print(uday,abhi,achu,akhil)
