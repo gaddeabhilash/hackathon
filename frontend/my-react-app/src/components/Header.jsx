@@ -1,37 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="w-full p-5 bg-white shadow-md">
+    <header className="bg-gradient-to-r from-indigo-500 to-pink-500 p-5 shadow-lg">
       <nav className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800">
-          Plagiarism Detection Tool
+        <h1 className="text-2xl font-extrabold text-white">
+          Plagiarism Checker
         </h1>
-        <ul className="flex space-x-4">
+        <ul className="hidden md:flex space-x-6 text-white">
           <li>
-            <a href="#" className="text-gray-600 hover:text-blue-500">
+            <Link to="/" className="hover:text-yellow-300">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-blue-500">
+            <Link to="/features" className="hover:text-yellow-300">
               Features
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-blue-500">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-600 hover:text-blue-500">
+            <Link to="/contact" className="hover:text-yellow-300">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-gray-600 hover:text-blue-500">
+            <Link to="/login" className="hover:text-yellow-300">
               Login
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/signup" className="hover:text-yellow-300">
+              signup
+            </Link>
           </li>
         </ul>
       </nav>
